@@ -51,7 +51,7 @@ namespace TransacaoFinanceira.Api.Controllers
         }
 
         [HttpPost]
-        [Route("account/processtransaction")]
+        [Route("account/processing-transaction")]
         public async Task<IActionResult> ProcessTransction()
         {
             var transactions = await _transactionServices.GetAllTransactionsAsync();
@@ -113,12 +113,6 @@ namespace TransacaoFinanceira.Api.Controllers
 
             return Ok(transaction);
         }
-
-
-
-
-
-
 
     }
 

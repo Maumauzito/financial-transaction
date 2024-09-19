@@ -1,20 +1,36 @@
-# Calculadora CDB
+# Transação Financeira
 
-Projeto de portifolio para apresentação
+Este projeto tem como objetivo realizar a criação e processamento de transações 
+financeiras, podendo ser expandido para outros niveis de arquitetura.
 
-## Installation
+Projeto desenvolvido com .Net 6 e utilização de um banco de dados local Sqlite,
+possui um swagger para interagir com os enpoints.
 
-Projeto desenvolvido em .NET 6 
+## Funcionalidades
 
-Angular CLI: 16.2.2 
+- Cadastro de contas
+- Cadastro de transações
+- Processamento de transações
 
-Node: 16.14.0
+## Como Rodar
+
+Ao iniciar o projeto use o Package Manager Console e 
+navegue até a pasta <b>TransacaoFinanceira.Infrastructure</b>
+e execute os comandos:
 
 ```bash
-npm install -g @angular/cli  
+Drop-Database
 ```
+Em seguida cria uma nova migration
 
+```bash
+Add-Migration nome da sua migration
+```
+e por fim 
 
+```bash
+Update-Database
+```
 
 ## Contribuição
 

@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TransacaoFinanceira.Infrastructure.Data;
 
@@ -10,9 +11,10 @@ using TransacaoFinanceira.Infrastructure.Data;
 namespace TransacaoFinanceira.Infrastructure.Migrations
 {
     [DbContext(typeof(TransacaoFinanceiraContex))]
-    partial class TransacaoFinanceiraContexModelSnapshot : ModelSnapshot
+    [Migration("20240919164439_populaDados")]
+    partial class populaDados
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.33");
